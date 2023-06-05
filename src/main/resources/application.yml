@@ -1,18 +1,10 @@
 rabbit:
   hostname: ${RABBIT_HOST:localhost}
 spring:
-  data:
-    mongodb:
-      database: ${DATABASE:test}
   cloud:
     gcp:
       pubsub:
         publisher:
           executor-threads: 10
-mongo:
-  user: jam
-  projectId: crypto-351521
-  mongoKey: mongo-password
-  url: mongodb+srv://${DB_USER:test}:%s@${CLUSTER_URL:test.test.test}/?retryWrites=true&w=majority
 pubsub:
   topic: ${TOPIC:test}
