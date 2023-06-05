@@ -9,7 +9,7 @@
     </parent>
     <groupId>dev.rabbit</groupId>
     <artifactId>event-filtering-service</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>event-filtering-service</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -26,7 +26,7 @@
         <connection>scm:git:${connection}</connection>
         <developerConnection>scm:git:${connection}</developerConnection>
         <url>${connection}</url>
-        <tag>HEAD</tag>
+        <tag>event-filtering-service-1.0.1</tag>
     </scm>
 
     <dependencies>
