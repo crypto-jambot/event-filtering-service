@@ -11,6 +11,7 @@ import java.util.List;
 @Document(collection = "trees")
 @Data
 @AllArgsConstructor
+@Deprecated
 public class Trees {
     @Id
     @Field("_id")
