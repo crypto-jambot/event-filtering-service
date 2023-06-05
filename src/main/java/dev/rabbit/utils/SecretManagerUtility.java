@@ -42,14 +42,8 @@ public class SecretManagerUtility {
         return this.secret;
     }
 
-
     public String accessSecretVersionString(String projectId, String secretId) {
         return accessSecretVersion(projectId, secretId, "latest").toStringUtf8();
     }
-
-    public String accessSecretVersion(String projectId, String secretId) {
-        return accessSecretVersion(projectId, secretId);
-    }
-
 
 }
