@@ -27,7 +27,7 @@ public class PubsubConfiguration {
                 String.format("Messages sent: %s", message.getHeaders().get("message-count"))));
         adapter.setFailureCallback(
                 (cause, message) -> {
-                    if (!cause.equals("due to null")) {
+                    if (!cause.toString().equals("due to null")) {
                         log.info(
                                 String.format("Error sending message %s due to %s", message.getHeaders().get("id"),
                                         cause
@@ -40,5 +40,5 @@ public class PubsubConfiguration {
 
         return adapter;
     }
-    
+
 }
