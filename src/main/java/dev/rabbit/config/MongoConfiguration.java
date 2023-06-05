@@ -4,14 +4,11 @@ import dev.rabbit.utils.SecretManagerUtility;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 
-@Component
-@ConfigurationProperties(prefix = "mongo")
 @Getter
 @Setter
+@Deprecated
 public class MongoConfiguration {
     @Getter(AccessLevel.NONE)
     @Setter(AccessLevel.NONE)
